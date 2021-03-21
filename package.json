@@ -9,18 +9,21 @@
     "url": "git@github.com:Coffee-Grey/learn-scuttlebutt.git"
   },
   "dependencies": {
-    "iterate": "0.1.0",
     "duplex": "~1.0.0",
-    "stream-serializer": "^1.1.2",
-    "monotonic-timestamp": "~0.0.8"
+    "iterate": "0.1.0",
+    "monotonic-timestamp": "~0.0.8",
+    "stream-serializer": "^1.1.2"
   },
   "devDependencies": {
-    "macgyver": "~1.10.1",
+    "macgyver": "~1.10",
     "event-stream": "~3.0",
     "tape": "~0.1.5",
     "request": "~2.16.6"
   },
   "scripts": {
-    "test": "set -e; for test in test/*.js; do node &test; done"
+    "test": "set -e; for test in test/*.js; do node &test; done",
+    "test:util-test": "node util-test/*test.js",
+    "test:model": "node test/model.js",
+    "test:cleanup": "node test/cleanup.js"
   }
 }
