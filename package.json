@@ -1,0 +1,26 @@
+{
+  "name": "learn-scuttlebutt",
+  "author": "CoffeeGrey",
+  "version": "1.0.0",
+  "description": "replicate data via scuttlebutt protocol, to learn scuttlebutt",
+  "homepage": "https://github.com/Coffee-Grey/learn-scuttlebutt",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Coffee-Grey/learn-scuttlebutt.git"
+  },
+  "dependencies": {
+    "iterate": "0.1.0",
+    "duplex": "~1.0.0",
+    "stream-serializer": "^1.1.2",
+    "monotonic-timestamp": "~0.0.8"
+  },
+  "devDependencies": {
+    "macgyver": "~1.10.1",
+    "event-stream": "~3.0",
+    "tape": "~0.1.5",
+    "request": "~2.16.6"
+  },
+  "scripts": {
+    "test": "set -e; for test in test/*.js; do node &test; done"
+  }
+}
