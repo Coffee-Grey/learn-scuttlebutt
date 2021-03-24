@@ -13,7 +13,7 @@ function ReliableEventEmitter(opts) {
     Scuttlebutt.call(this, opts)
 }
 
-var emit = EventEmitter.prototype.emit()
+var emit = EventEmitter.prototype.emit
 var emitter = ReliableEventEmitter.prototype
 
 emitter.emit = function (event) {

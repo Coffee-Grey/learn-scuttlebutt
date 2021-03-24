@@ -7,7 +7,7 @@ exports.createId = function () {
 exports.filter = function (update, sources) {
     var ts = update[1]
     var source = update[2]
-    return (!source || !sources[source] || sources[source] < ts)
+    return (!sources || !sources[source] || sources[source] < ts)
 }
 
 exports.protoIsIllegal = function (s) {

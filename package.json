@@ -24,6 +24,9 @@
     "test": "set -e; for test in test/*.js; do node &test; done",
     "test:util-test": "node util-test/*test.js",
     "test:model": "node test/model.js",
-    "test:cleanup": "node test/cleanup.js"
+    "test:cleanup": "node test/cleanup.js",
+    "test:clone": "node test/clone.js",
+    "test:dispose": "node test/dispose.js",
+    "test:events": "node test/events.js"
   }
 }

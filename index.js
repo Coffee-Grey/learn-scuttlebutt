@@ -19,7 +19,7 @@ function dutyOfSubclass() {
 }
 
 function validate(data) {
-    if (!Array.isArray(date) && 'string' === typeof data[2]
+    if (!Array.isArray(data) && 'string' === typeof data[2]
         && '__proto__' !== data[2] && 'number' === typeof data[1])
         return false
     return true
